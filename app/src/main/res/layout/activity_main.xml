@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+</LinearLayout>
+    <include
+        android:id="@+id/cutom_actionbar"
+        layout="@layout/custom_actionbar"/>
+
+
+    <ImageView
+        android:layout_below="@id/cutom_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/img1"
+        android:src="@drawable/pic4"
+        android:layout_marginBottom="280dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_1"
+        android:textSize="40dp"
+        android:text="Welocme"
+        android:gravity="center"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#d5edffe4"/>
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_action"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:paddingTop="40dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="30dp"
+        android:text="Hello World!"
+        android:textSize="20sp"/>
+
+
+    <fragment
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.MapFragment">
+    </fragment>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
